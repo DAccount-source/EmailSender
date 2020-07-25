@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EmailSender</string>
+
+    <string-array name="navigation_drawer_items_array">
+        <item>Inbox</item>
+        <item>Sent</item>
+        <item>Drafts</item>
+        <item>Outbox</item>
+    </string-array>
+
+</resources>
