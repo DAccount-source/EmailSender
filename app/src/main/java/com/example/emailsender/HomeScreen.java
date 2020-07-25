@@ -33,6 +33,7 @@ public class HomeScreen extends AppCompatActivity implements DrawerItemRecyclerV
         mDrawerRecyclerView.setLayoutManager(linearLayoutManager);
 
         toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitleTextColor(getResources().getColor(android.R.color.white, getResources().newTheme()));
 
         DrawerItemRecyclerViewAdapter adapter = new DrawerItemRecyclerViewAdapter(mNavigationDrawerItemTitles, this);
         mDrawerRecyclerView.setAdapter(adapter);
@@ -40,6 +41,8 @@ public class HomeScreen extends AppCompatActivity implements DrawerItemRecyclerV
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerLayout.setDrawerListener(mDrawerToggle);
         setupDrawerToggle();
+
+        setTitle(getString(R.string.app_name));
 
     }
 
